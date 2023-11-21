@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WashingCarDB.DAL.Entities
 {
-    public class Service
+    public class Service : Entity   
     {
 
 
