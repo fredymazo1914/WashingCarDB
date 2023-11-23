@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Metrics;
 using WashingCarDB.DAL.Entities;
 
 namespace WashingCarDB.DAL
 {
-    public class DataBaseContext : DbContext
+    public class DataBaseContext : IdentityDbContext<User>
     {
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
         {

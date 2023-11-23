@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using WashingCarDB.Enum;
 
 namespace WashingCarDB.DAL.Entities
 {
@@ -32,8 +33,8 @@ namespace WashingCarDB.DAL.Entities
         public string Address { get; set; }
 
 
-       // [Display(Name = "Tipo de usuario")]
-       // public UserType UserType { get; set; }
+        [Display(Name = "Tipo de usuario")]
+        public UserType UserType { get; set; }
 
         [Display(Name = "Vehiculos")]
         public ICollection<Vehicle> Vehicles { get; set; }
