@@ -23,6 +23,7 @@ namespace WashingCarDB.DAL.Entities
         public Guid VehicleId { get; set; }
 
         public List<Vehicle> Vehicles { get; set; }
+        public DateTime CreatedDate { get; internal set; }
         // public ICollection<Vehicle> Vehicles { get; set; }
 
 
