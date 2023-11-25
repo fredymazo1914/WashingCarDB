@@ -12,8 +12,8 @@ using WashingCarDB.DAL;
 namespace WashingCarDB.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20231123092801_newUserEntity")]
-    partial class newUserEntity
+    [Migration("20231125003842_Basededatos1")]
+    partial class Basededatos1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

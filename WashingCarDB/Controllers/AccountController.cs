@@ -7,6 +7,8 @@ namespace WashingCarDB.Controllers
     public class AccountController : Controller
     {
 
+
+
         private readonly IUserHelper _userHelper;
 
 
@@ -50,7 +52,9 @@ namespace WashingCarDB.Controllers
             await _userHelper.LogoutAsync();
             return RedirectToAction("Index", "Home");
         }
-
-
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

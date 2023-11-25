@@ -6,7 +6,6 @@ namespace WashingCarDB.Helpers
 {
     public interface IUserHelper
     {
-
         // Firmas para metodos
         Task<User> GetUserAsync(string email); //captura los usuarios de la base de datos
 
@@ -18,6 +17,5 @@ namespace WashingCarDB.Helpers
         Task<bool> IsUserInRoleAsync(User user, string roleName); //Valida si un usuario pertenece a un Rol
         Task<SignInResult> LoginAsync(LoginViewModel loginViewModel);
         Task LogoutAsync();
-
     }
 }

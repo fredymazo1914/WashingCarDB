@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WashingCarDB.Migrations
 {
     /// <inheritdoc />
-    public partial class newUserEntity : Migration
+    public partial class Basededatos1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
