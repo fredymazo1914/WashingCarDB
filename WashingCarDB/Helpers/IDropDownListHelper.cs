@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-
 namespace WashingCarDB.Helpers
 {
     public interface IDropDownListHelper

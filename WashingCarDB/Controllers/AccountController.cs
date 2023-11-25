@@ -2,6 +2,7 @@
 using WashingCarDB.Helpers;
 using WashingCarDB.Models;
 
+
 namespace WashingCarDB.Controllers
 {
     public class AccountController : Controller
@@ -47,12 +48,12 @@ namespace WashingCarDB.Controllers
             return View(loginViewModel);
         }
 
-        public async Task<IActionResult> Logout()
+       public async Task<IActionResult> Logout()
         {
             await _userHelper.LogoutAsync();
-            return RedirectToAction("Index", "Home");
+           return RedirectToAction("Index", "Home");
         }
-        public IActionResult Index()
+       public IActionResult Index()
         {
             return View();
         }
