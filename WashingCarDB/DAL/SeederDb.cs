@@ -23,7 +23,7 @@ namespace WashingCarDB.DAL
             await _context.Database.EnsureCreatedAsync();
             await PopulateRolesAsync();
             await PopulateUserAsync("Edinson", "Mosquera", "edidy9v@gmail.com", "3205320406", "Medellin", "1076819622", UserType.Admin);
-            await PopulateUserAsync("xxxxxx", "xxxxxxxxx", "xxxxxxxxxxxxx.com", "300xxxxxxx", "xxxxxxxx", "xxxxxxxxxxx", UserType.User);
+            await PopulateUserAsync("Fredy", "Mazo", "frema1914@gmail.com", "3127624079", "Medellín", "3127624079", UserType.User);
             await PopulateServiceAsync();
             // await PopulateUserAsync("Bill", "Gates", "bill_gates_user@yopmail.com", "4005656656", "Street Microsoft", "405060", UserType.User);
             await _context.SaveChangesAsync();

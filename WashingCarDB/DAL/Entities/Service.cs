@@ -1,11 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace WashingCarDB.DAL.Entities
 {
     public class Service : Entity   
     {
-
 
         #region Properties
         [Display(Name = "Servicio.")]
@@ -26,8 +26,6 @@ namespace WashingCarDB.DAL.Entities
         public DateTime CreatedDate { get; internal set; }
         // public ICollection<Vehicle> Vehicles { get; set; }
 
-
         #endregion
-
     }
 }
